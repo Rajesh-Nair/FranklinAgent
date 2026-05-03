@@ -2,7 +2,8 @@
   "permissions": {
     "allow": [
       "Bash(gh issue:*)",
-      "Bash(where gh:*)"
+      "Bash(where gh:*)",
+      "PowerShell(Get-ChildItem -Path \"C:\\\\Study\\\\Myprojects\\\\claudeprojects\\\\FranklinAgent\" -Recurse -Force | Select-Object FullName | ForEach-Object { $_.FullName.Replace\\(\"C:\\\\Study\\\\Myprojects\\\\claudeprojects\\\\FranklinAgent\\\\\", \"\"\\) } | Sort-Object)"
     ]
   }
 }
